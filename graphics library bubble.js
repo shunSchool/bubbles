@@ -1,3 +1,9 @@
+//fill the canvas with provided color
+function background(color) {
+    fill(color);
+    rect(0, 0, cnv.width, cnv.height, "fill");
+}
+
 function stroke(style) {
     ctx.strokeStyle = style;
 }
@@ -33,7 +39,7 @@ ctx.beginPath();
 ctx.arc(x, y, r, 0, 2 * Math.PI);
 if (mode === "fill") {
     ctx.fill();
-} else if (mode === "stroke:") {
+} else if (mode === "stroke") {
   ctx.stroke();
     }
 }
